@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     # return view('welcome');
-    return "Welcome to my Laravel application.";
+    return 'Welcome to my Laravel application.';
 });
 
 /*
@@ -28,5 +28,11 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('/book', 'BookController@getIndex');
+
+    Route::get('/book/create', 'BookController@getCreate');
+
+    Route::post('/book/create', 'BookController@postCreate');
+
+    Route::get('/book/{id}', 'BookController@getShow');
 });

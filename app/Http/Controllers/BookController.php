@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
 
-abstract class Request extends FormRequest
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+class BookController extends Controller
 {
-    //
     public function getIndex() {
         return 'Here is the list of all books.';
     }
