@@ -11,8 +11,8 @@
 |
 */
 Route::get('/testing', function() {
-    echo config('app.env');
-    echo config('app.url');
+    echo 'app.env:  '.config('app.env');
+    echo '<br>app.url:  '.config('app.url');
     return '';
 });
 
