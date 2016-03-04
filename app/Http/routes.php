@@ -10,6 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/testing', function() {
+    echo config('app.env');
+    echo config('app.url');
+    return '';
+});
+
 
 Route::get('/', function () {
     # return view('welcome');
