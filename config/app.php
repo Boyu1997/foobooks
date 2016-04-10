@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'foobooks.jiangboyu.com'),
+    'url' => env('APP_URL', 'http://foobooks.jiangboyu.com'),
 
     /*
     |--------------------------------------------------------------------------

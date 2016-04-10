@@ -13,8 +13,8 @@ class BookController extends Controller
         return 'Here is the list of all books.';
     }
 
-    public function getShow($id) {
-        return 'Show individual book '.$id.'.';
+    public function getShow($id = null) {
+        return view('book.show')->with('id', $id);
     }
 
     public function getCreate() {
